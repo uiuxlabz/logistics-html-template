@@ -1,143 +1,115 @@
-# LOGISTICA — Logistics Template
+# LOGISTICA — Logistics & Supply Chain HTML Template
 
-**Moving the World, On Time.**
+> Delivering Tomorrow, Today
 
-A premium, framework-free logistics and supply chain template built with semantic HTML, modern CSS custom properties, and vanilla JavaScript. Designed for freight forwarders, logistics companies, and supply chain providers that demand a professional, conversion-focused web presence.
+A premium logistics, freight, and supply chain HTML template. Built with pure HTML5, CSS3, and vanilla JavaScript. No frameworks, no dependencies -- just clean, fast, production-ready code.
 
----
+## Pages
 
-## Live Pages
-
-| Page | Description |
-|------|-------------|
-| [Home](index.html) | Full-screen hero with animated stats, service cards, real-time shipment tracking demo, testimonials, and CTA |
-| [About](about.html) | Company story, mission and vision, core values grid, leadership team, fleet infrastructure stats |
-| [Services](services.html) | Six detailed service showcases: Air Freight, Ocean Freight, Road Freight, Warehousing, Customs Clearance, Supply Chain Consulting |
-| [Contact](contact.html) | Multi-field quote request form with validation, contact info cards, embedded map, and shipment tracking widget |
-
----
-
-## Brand Identity
-
-- **Primary:** Orange `#F97316` — energy, urgency, action
-- **Secondary:** Navy `#1E293B` — trust, professionalism, stability
-- **Dark:** `#0F172A` — depth, premium feel
-- **Typography:** Barlow (headings) + Inter (body) via Google Fonts
-- **Icons:** Font Awesome 6.5.1 via CDN
-
----
+| Page | Description | Link |
+|------|-------------|------|
+| Home | Hero with animated stats, service cards, tracking demo, testimonials, CTA | [index.html](index.html) |
+| About | Company story, core values, fleet capabilities, leadership team | [about.html](about.html) |
+| Services | Six detailed service sections with alternating image-text layouts | [services.html](services.html) |
+| Contact | Quote request form, contact info cards, shipment tracking, map | [contact.html](contact.html) |
 
 ## Features
 
-- **Zero dependencies** — no build tools, no frameworks, no npm
-- **Responsive design** — mobile-first with breakpoints at 720px and 980px
-- **Scroll animations** — IntersectionObserver-based reveal, stagger, and slide effects with reduced-motion support
-- **Animated counters** — statistics count up when they enter the viewport
-- **Interactive tracking demo** — simulate shipment tracking with animated progress steps
-- **Contact form** — client-side validation with success/error status messages
-- **Newsletter form** — email subscription in footer
-- **Mobile navigation** — burger menu with overlay, smooth transitions
-- **Back-to-top button** — appears after scrolling, smooth scroll to top
-- **Header scroll effect** — shadow added on scroll for depth
-- **Active nav highlighting** — current page automatically marked in navigation
+- Fully responsive -- mobile-first with breakpoints at 720px and 980px
+- Scroll reveal animations via IntersectionObserver (respects `prefers-reduced-motion`)
+- Animated counters for stats and fleet numbers
+- Interactive shipment tracking demo with step indicators
+- Quote request form with client-side validation and success/error states
+- Newsletter subscription in footer
+- Back-to-top button with scroll visibility
+- Sticky header with blur backdrop and scroll shadow
+- Mobile hamburger nav with overlay
+- Font Awesome 6.5.1 icon set included
+- Google Fonts: Barlow (headings) + Inter (body)
+- All images are original -- no external stock photo services
 
----
+## Quick Start
+
+1. Download or clone the project
+2. Open `index.html` in any modern browser
+3. No build step, no server required -- everything runs statically
+
+```bash
+# Optional: serve locally
+npx serve .
+# or
+python3 -m http.server 8000
+```
+
+## Design System
+
+**Colors**
+
+| Token | Value | Usage |
+|-------|-------|-------|
+| `--orange` | `#F97316` | Primary brand, CTAs, accents |
+| `--orange-dark` | `#EA580C` | Hover states |
+| `--orange-50` | `#FFF7ED` | Light backgrounds |
+| `--navy` | `#1E293B` | Secondary, dark sections |
+| `--dark` | `#0F172A` | Footer, stats bar, page heroes |
+
+**Typography**
+
+| Role | Font | Weights |
+|------|------|---------|
+| Headings | Barlow | 400-900 |
+| Body | Inter | 300-700 |
+
+**Spacing scale:** 0.25rem through 8rem (CSS custom properties)
 
 ## File Structure
 
 ```
 logistics-html-template/
   index.html              Home page
-  about.html              About / company page
-  services.html           Services detail page
-  contact.html            Contact / quote request page
+  about.html              About page
+  services.html           Services page
+  contact.html            Contact / Quote page
   README.md               This file
   assets/
     css/
-      style.css           Complete design system (1933 lines)
+      style.css           Complete design system + all component styles
     js/
-      main.js             All interactive behaviors (399 lines)
+      main.js             Vanilla JS: nav, forms, counters, reveals, tracking
     img/
       carousel-1.jpg      Hero background
-      carousel-2.jpg      Alternate hero
-      about.jpg           About split image
-      feature.jpg         Mission section image
+      carousel-2.jpg      Consulting section
+      about.jpg           About / warehouse operations
+      feature.jpg         Customs clearance section
       map.png             Contact page map
       service-1.jpg       Air freight
       service-2.jpg       Ocean freight
       service-3.jpg       Road freight
       service-4.jpg       Warehousing
-      service-5.jpg       Customs clearance
-      service-6.jpg       Supply chain consulting
+      service-5.jpg       Customs
+      service-6.jpg       Consulting
 ```
 
----
+## Customization
 
-## CSS Architecture
-
-The stylesheet uses a custom properties system organized into clear sections:
-
-- **Custom Properties** — colors, typography, spacing, shadows, transitions
-- **Reset & Base** — clean slate with consistent defaults
-- **Typography** — heading scale, text utilities, color helpers
-- **Layout** — container, grid system, flex utilities
-- **Buttons** — primary, outline, dark, arrow variants with hover states
-- **Header/Nav** — fixed header with glassmorphism, mobile burger
-- **Hero** — full-viewport hero with overlay gradient
-- **Page Hero** — inner page banners with breadcrumb navigation
-- **Split Layout** — two-column image + text sections
-- **Services** — card grid and detailed alternating service blocks
-- **Stats** — dark background counter section
-- **Tracking** — shipment tracker with step progress
-- **Testimonials** — client review cards
-- **CTA** — gradient call-to-action with decorative circles
-- **Contact** — form, info cards, map
-- **Footer** — four-column grid with newsletter
-- **Values / Team / Fleet** — about page specialized components
-- **Reveal Animations** — fade, slide, scale, stagger with reduced-motion
-- **Responsive** — two breakpoints for tablet and mobile
-
----
-
-## JavaScript Capabilities
-
-All JavaScript is framework-free vanilla ES5-compatible code inside a single IIFE:
-
-- **Burger navigation** — toggle mobile menu with body scroll lock
-- **Active nav detection** — highlights current page link
-- **Header scroll** — adds `.scrolled` class for shadow effect
-- **Back to top** — show/hide button, smooth scroll
-- **Year auto-fill** — `[data-year]` elements updated automatically
-- **Scroll reveal** — IntersectionObserver triggers `.revealed` class
-- **Counter animation** — eased count-up with cubic timing
-- **Tracking form** — simulates lookup, animates progress steps
-- **Contact/quote form** — validation, loading state, success message
-- **Newsletter** — email validation on submit
-- **Smooth scroll** — anchor links offset for fixed header
-- **Lazy loading** — native `loading="lazy"` with fallback
-
----
-
-## Usage
-
-1. Open any `.html` file directly in a browser — no server required
-2. Replace images in `assets/img/` with your own photography
-3. Edit text content, contact details, and service descriptions in the HTML files
-4. Customize colors by changing CSS custom properties in `:root`
-5. Add or remove service cards, testimonials, or team members by duplicating existing card markup
-
----
+- **Colors:** Edit CSS custom properties in `:root` at the top of `style.css`
+- **Fonts:** Swap the Google Fonts `<link>` in each HTML `<head>` and update `--font-heading` / `--font-body`
+- **Content:** All text is plain HTML -- edit directly in each `.html` file
+- **Images:** Replace files in `assets/img/` keeping the same filenames, or update `src` attributes
+- **Forms:** Forms use `data-form` attribute (`contact`, `quote`, `tracking`). The JS handles validation and status messages via `.form-ok` / `.form-err` classes -- no `alert()` calls
+- **Animations:** Toggle reveal classes (`reveal`, `reveal-left`, `reveal-right`, `stagger`) on sections
 
 ## Browser Support
 
 - Chrome 90+
-- Firefox 88+
+- Firefox 90+
 - Safari 14+
 - Edge 90+
-- Mobile Safari / Chrome on iOS and Android
+- iOS Safari 14+
+- Android Chrome 90+
+
+Uses modern CSS (custom properties, clamp, grid, backdrop-filter) and ES6 JavaScript. No polyfills needed for target browsers.
 
 ---
 
-## License
-
-Custom template built for LOGISTICA. Free to use and modify.
+[![Build Something Together](https://img.shields.io/badge/Let's_Build_Something_Together-🚀-F97316)](https://tally.so/r/q4q1L9)

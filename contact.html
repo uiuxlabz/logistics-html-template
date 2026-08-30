@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact LOGISTICA — Get a free logistics quote, reach our team, or visit our New York headquarters. We respond within 24 hours.">
-  <title>Contact Us — LOGISTICA</title>
+  <meta name="description" content="Contact LOGISTICA - Get a free logistics quote, request a consultation, or reach our team for freight, warehousing, and supply chain solutions.">
+  <title>Contact — LOGISTICA</title>
 
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚚</text></svg>">
@@ -36,7 +36,7 @@
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="services.html" class="nav-link">Services</a>
-        <a href="contact.html" class="nav-link active">Contact</a>
+        <a href="contact.html" class="nav-link">Contact</a>
       </nav>
 
       <div class="header-right">
@@ -60,7 +60,7 @@
        ============================================ -->
   <section class="page-hero">
     <div class="container">
-      <h1 class="page-hero-title">Contact <span class="text-orange">Us</span></h1>
+      <h1 class="page-hero-title">Get in Touch</h1>
       <div class="breadcrumb">
         <a href="index.html">Home</a>
         <span class="breadcrumb-sep"><i class="fas fa-chevron-right"></i></span>
@@ -70,168 +70,174 @@
   </section>
 
   <!-- ============================================
-       CONTACT GRID: FORM + INFO CARDS
+       CONTACT SECTION
        ============================================ -->
   <section class="section">
     <div class="container">
       <div class="contact-grid">
-
-        <!-- LEFT: CONTACT FORM -->
+        <!-- Contact Form -->
         <div class="contact-form-wrapper reveal-left">
-          <div class="section-label">Send a Message</div>
-          <h2 style="margin-bottom: var(--space-md);">Request a Free Quote</h2>
-          <p style="margin-bottom: var(--space-xl);">
-            Fill out the form below and our logistics team will respond within 24 hours
-            with a tailored solution for your shipping needs.
+          <h3 style="margin-bottom: 0.5rem; font-family: var(--font-heading);">Request a Quote</h3>
+          <p style="font-size: var(--text-sm); color: var(--gray-500); margin-bottom: var(--space-xl);">
+            Fill out the form below and our logistics team will get back to you within 24 hours.
           </p>
 
-          <form data-form="contact">
+          <form data-form="quote">
             <div class="form-row">
               <div class="form-group">
-                <label class="form-label" for="contact-name">Full Name *</label>
-                <input type="text" id="contact-name" class="form-control" name="name" placeholder="John Mitchell" required>
+                <label class="form-label" for="quote-name">Full Name *</label>
+                <input type="text" id="quote-name" name="name" class="form-control" placeholder="John Smith" required>
               </div>
               <div class="form-group">
-                <label class="form-label" for="contact-email">Email Address *</label>
-                <input type="email" id="contact-email" class="form-control" name="email" placeholder="john@company.com" required>
+                <label class="form-label" for="quote-email">Email Address *</label>
+                <input type="email" id="quote-email" name="email" class="form-control" placeholder="john@company.com" required>
               </div>
             </div>
 
             <div class="form-row">
               <div class="form-group">
-                <label class="form-label" for="contact-phone">Phone Number</label>
-                <input type="tel" id="contact-phone" class="form-control" name="phone" placeholder="+1 (555) 000-0000">
+                <label class="form-label" for="quote-phone">Phone Number</label>
+                <input type="tel" id="quote-phone" name="phone" class="form-control" placeholder="+1 (555) 123-4567">
               </div>
               <div class="form-group">
-                <label class="form-label" for="contact-service">Service Needed</label>
-                <select id="contact-service" class="form-control" name="service">
-                  <option value="">Select a service...</option>
-                  <option value="air-freight">Air Freight</option>
-                  <option value="ocean-freight">Ocean Freight</option>
-                  <option value="road-freight">Road Freight</option>
-                  <option value="warehousing">Warehousing &amp; Distribution</option>
-                  <option value="customs">Customs Clearance</option>
-                  <option value="consulting">Supply Chain Consulting</option>
-                </select>
+                <label class="form-label" for="quote-company">Company Name</label>
+                <input type="text" id="quote-company" name="company" class="form-control" placeholder="Acme Corp">
               </div>
             </div>
 
             <div class="form-group">
-              <label class="form-label" for="contact-company">Company Name</label>
-              <input type="text" id="contact-company" class="form-control" name="company" placeholder="Your Company Ltd.">
+              <label class="form-label" for="quote-service">Service Needed</label>
+              <select id="quote-service" name="service" class="form-control">
+                <option value="">Select a service</option>
+                <option value="air-freight">Air Freight</option>
+                <option value="ocean-freight">Ocean Freight</option>
+                <option value="road-freight">Road Freight</option>
+                <option value="warehousing">Warehousing & Distribution</option>
+                <option value="customs">Customs Clearance</option>
+                <option value="consulting">Supply Chain Consulting</option>
+                <option value="other">Other</option>
+              </select>
             </div>
 
             <div class="form-group">
-              <label class="form-label" for="contact-message">Message *</label>
-              <textarea id="contact-message" class="form-control" name="message" placeholder="Tell us about your shipping requirements, origin/destination, cargo type, and any special handling needs..." required></textarea>
+              <label class="form-label" for="quote-message">Shipment Details</label>
+              <textarea id="quote-message" name="message" class="form-control" placeholder="Tell us about your shipment: origin, destination, cargo type, volume, and any special requirements..."></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary btn-lg w-full" data-original-text="Send Message">
-              <i class="fas fa-paper-plane"></i>
-              Send Message
+            <button type="submit" class="btn btn-primary w-full" data-original-text="Send Quote Request">
+              <i class="fas fa-paper-plane"></i> Send Quote Request
             </button>
           </form>
         </div>
 
-        <!-- RIGHT: CONTACT INFO CARDS -->
+        <!-- Contact Info -->
         <div class="reveal-right">
-          <div class="section-label">Get in Touch</div>
-          <h2 style="margin-bottom: var(--space-xl);">We're Here to Help</h2>
-
-          <div style="display: flex; flex-direction: column; gap: var(--space-lg); margin-bottom: var(--space-2xl);">
+          <div style="display: flex; flex-direction: column; gap: var(--space-lg);">
             <div class="contact-info-card">
-              <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="contact-info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
               <div>
-                <h4>Headquarters</h4>
+                <h4>Our Headquarters</h4>
                 <p>1200 Logistics Way<br>New York, NY 10001, USA</p>
               </div>
             </div>
 
             <div class="contact-info-card">
-              <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+              <div class="contact-info-icon">
+                <i class="fas fa-phone"></i>
+              </div>
               <div>
-                <h4>Phone</h4>
+                <h4>Call Us Directly</h4>
                 <p>General: <a href="tel:+18005555644">+1 (800) 555-LOGI</a><br>
-                   Sales: <a href="tel:+18005555645">+1 (800) 555-SELL</a></p>
+                Sales: <a href="tel:+18005555645">+1 (800) 555-LOG2</a></p>
               </div>
             </div>
 
             <div class="contact-info-card">
-              <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
               <div>
-                <h4>Email</h4>
+                <h4>Email Us</h4>
                 <p>General: <a href="mailto:info@logistica.com">info@logistica.com</a><br>
-                   Sales: <a href="mailto:sales@logistica.com">sales@logistica.com</a></p>
+                Sales: <a href="mailto:sales@logistica.com">sales@logistica.com</a></p>
               </div>
             </div>
 
             <div class="contact-info-card">
-              <div class="contact-info-icon"><i class="fas fa-clock"></i></div>
+              <div class="contact-info-icon">
+                <i class="fas fa-clock"></i>
+              </div>
               <div>
                 <h4>Business Hours</h4>
                 <p>Monday - Friday: 8:00 AM - 6:00 PM EST<br>
-                   24/7 Emergency Support Available</p>
+                24/7 Emergency Support Available</p>
               </div>
             </div>
           </div>
 
-          <!-- MAP -->
-          <div class="map-wrapper">
-            <img src="assets/img/map.png" alt="LOGISTICA headquarters location map">
+          <!-- Map -->
+          <div class="map-wrapper reveal" style="margin-top: var(--space-xl);">
+            <img src="assets/img/map.png" alt="LOGISTICA headquarters location on map">
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
   <!-- ============================================
-       QUICK TRACKING SECTION
+       QUOTE REQUEST TRACKING
        ============================================ -->
-  <section class="section tracking-section">
+  <section class="section bg-gray">
     <div class="container">
-      <div class="section-header reveal">
-        <div class="section-label">Track Shipment</div>
-        <h2 class="section-title">Already Have a Tracking Number?</h2>
-        <p class="section-subtitle">
-          Enter your tracking number below for instant real-time status updates.
-        </p>
-      </div>
-
-      <div style="max-width: 700px; margin: 0 auto;">
-        <div class="tracking-box reveal">
-          <form data-form="tracking">
-            <div class="tracking-form">
-              <input type="text" class="tracking-input" name="tracking-number" placeholder="Enter tracking number (e.g. LG-2024-001234)" required>
-              <button type="submit" class="btn btn-primary">
-                <i class="fas fa-search"></i> Track
-              </button>
-            </div>
-          </form>
-          <div class="tracking-result">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-              <div>
-                <strong style="color: var(--dark);">Shipment: <span class="tracking-id">LG-2024-001234</span></strong>
-                <p style="margin: 0; font-size: 0.875rem; color: var(--gray-500);">Estimated delivery: Aug 15, 2026</p>
+      <div class="split">
+        <div class="split-content reveal-left">
+          <div class="section-label">Quick Track</div>
+          <h2>Already Have a Tracking Number?</h2>
+          <p>
+            Enter your shipment tracking number below to get real-time status updates
+            on your cargo. Our tracking system provides detailed information at every
+            stage of transit.
+          </p>
+        </div>
+        <div class="reveal-right">
+          <div class="tracking-box">
+            <h4 style="margin-bottom: 0.5rem; font-family: var(--font-heading);">Track Shipment</h4>
+            <p style="font-size: 0.875rem; color: var(--gray-500); margin-bottom: 1.5rem;">Enter your tracking number to get real-time status updates.</p>
+            <form data-form="tracking">
+              <div class="tracking-form">
+                <input type="text" class="tracking-input" name="tracking-number" placeholder="Enter tracking number (e.g. LG-2024-001234)" required>
+                <button type="submit" class="btn btn-primary">
+                  <i class="fas fa-search"></i> Track
+                </button>
               </div>
-              <span style="background: var(--orange); color: white; padding: 4px 12px; border-radius: 999px; font-size: 0.75rem; font-weight: 600;">IN TRANSIT</span>
-            </div>
-            <div class="tracking-steps">
-              <div class="tracking-step completed">
-                <div class="tracking-step-dot"><i class="fas fa-check"></i></div>
-                <div class="tracking-step-label">Picked Up</div>
+            </form>
+            <div class="tracking-result">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <div>
+                  <strong style="color: var(--dark);">Shipment: <span class="tracking-id">LG-2024-001234</span></strong>
+                  <p style="margin: 0; font-size: 0.875rem; color: var(--gray-500);">Estimated delivery: Aug 15, 2026</p>
+                </div>
+                <span style="background: var(--orange); color: white; padding: 4px 12px; border-radius: 999px; font-size: 0.75rem; font-weight: 600;">IN TRANSIT</span>
               </div>
-              <div class="tracking-step completed">
-                <div class="tracking-step-dot"><i class="fas fa-check"></i></div>
-                <div class="tracking-step-label">In Customs</div>
-              </div>
-              <div class="tracking-step active">
-                <div class="tracking-step-dot"><i class="fas fa-truck"></i></div>
-                <div class="tracking-step-label">In Transit</div>
-              </div>
-              <div class="tracking-step">
-                <div class="tracking-step-dot"><i class="fas fa-box"></i></div>
-                <div class="tracking-step-label">Delivered</div>
+              <div class="tracking-steps">
+                <div class="tracking-step completed">
+                  <div class="tracking-step-dot"><i class="fas fa-check"></i></div>
+                  <div class="tracking-step-label">Picked Up</div>
+                </div>
+                <div class="tracking-step completed">
+                  <div class="tracking-step-dot"><i class="fas fa-check"></i></div>
+                  <div class="tracking-step-label">In Customs</div>
+                </div>
+                <div class="tracking-step active">
+                  <div class="tracking-step-dot"><i class="fas fa-truck"></i></div>
+                  <div class="tracking-step-label">In Transit</div>
+                </div>
+                <div class="tracking-step">
+                  <div class="tracking-step-dot"><i class="fas fa-box"></i></div>
+                  <div class="tracking-step-label">Delivered</div>
+                </div>
               </div>
             </div>
           </div>
@@ -246,19 +252,19 @@
   <section class="cta-section">
     <div class="container">
       <div class="cta-content reveal">
-        <h2>Ready to Ship?</h2>
+        <h2>Prefer to Talk? We Are Here.</h2>
         <p>
-          Join 2,000+ companies that trust LOGISTICA for their global logistics needs.
-          Get a custom quote in 24 hours — no commitment required.
+          Our logistics experts are standing by to discuss your shipping needs.
+          Call us or request a callback and we will reach out within one business hour.
         </p>
         <div class="cta-actions">
           <a href="tel:+18005555644" class="btn btn-dark btn-lg">
             <i class="fas fa-phone"></i>
             Call +1 (800) 555-LOGI
           </a>
-          <a href="services.html" class="btn btn-outline btn-lg">
-            <i class="fas fa-arrow-right"></i>
-            View Our Services
+          <a href="mailto:info@logistica.com" class="btn btn-outline btn-lg">
+            <i class="fas fa-envelope"></i>
+            Email Us
           </a>
         </div>
       </div>
