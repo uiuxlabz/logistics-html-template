@@ -41,6 +41,10 @@ npx serve .
 python3 -m http.server 8000
 ```
 
+## 📸 Screenshot
+
+![Homepage Preview](screenshot.png)
+
 ## Design System
 
 **Colors**
